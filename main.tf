@@ -31,3 +31,12 @@ resource "aws_s3_bucket" "this" {
     }
   }
 }
+
+module "notification" {
+  source = "./modules/notification"
+  bucket = aws_s3_bucket.this.bucket
+  bucket_arn = aws_s3_bucket.this.arn
+  lambda_function = var.notification_lambda
+  queue = var.notification_queue
+  topic = var.notification_topic
+}
