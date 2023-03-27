@@ -102,7 +102,7 @@ module "bucket" {
 
 ## Authors
 
-Module managed by [Cleber Gasparoto](https://github.com/chgasparoto)
+Module managed by [Rafael Vastag](https://github.com/rafaelvastag)
 
 ## License
 [MIT](LICENSE)
